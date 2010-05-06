@@ -1,0 +1,1 @@
+mvn launch4j-plugin:launch4j-plugin:exe

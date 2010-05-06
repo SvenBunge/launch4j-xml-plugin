@@ -1,0 +1,13 @@
+# use glob syntax.
+syntax: glob
+
+*.class
+.settings/*
+.*
+target/*
+*/target/*
+*/classes/*
+testdb.tmp/*
+testdb.*
+*.exe
+*.bdl
