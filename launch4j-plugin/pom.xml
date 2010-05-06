@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>launch4j-xml-plugin</groupId>
 	<artifactId>launch4j-xml-plugin</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>maven-plugin</packaging>
 	<name>launch4j-plugin Maven Mojo</name>
 	<url>http://maven.apache.org</url>
@@ -11,9 +11,9 @@
 		<maven.version>2.2.1</maven.version>
 	</properties>
 	<scm>
-		<connection>scm:svn:vn:https://launch4j-xml-plugin.googlecode.com/svn/tags/launch4j-xml-plugin-1.0.0</connection>
-		<developerConnection>scm:svn:https://launch4j-xml-plugin.googlecode.com/svn/tags/launch4j-xml-plugin-1.0.0</developerConnection>
-		<url>svn:https://launch4j-xml-plugin.googlecode.com/svn/tags/launch4j-xml-plugin-1.0.0</url>
+		<connection>scm:svn:vn:https://launch4j-xml-plugin.googlecode.com/svn/trunk</connection>
+		<developerConnection>scm:svn:https://launch4j-xml-plugin.googlecode.com/svn/trunk</developerConnection>
+		<url>svn:https://launch4j-xml-plugin.googlecode.com/svn/trunk</url>
 	</scm>
 	<build>
 		<plugins>
