@@ -1,14 +1,14 @@
 package launch4j;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Iterator;
-import java.util.List;
-
 import org.apache.commons.lang.StringUtils;
 import org.apache.maven.plugin.logging.Log;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
 
 public class XmlChanger {
 
@@ -18,7 +18,7 @@ public class XmlChanger {
 	private final Log log;
 
 	public XmlChanger(String outputDirectory, String finalName,
-			List<String> classpath, Log log) {
+					  List<String> classpath, Log log) {
 		this.outputDirectory = outputDirectory;
 		this.finalName = finalName;
 		this.log = log;
@@ -65,7 +65,7 @@ public class XmlChanger {
 
 	private static List<String> getJars(List<String> classpathList) {
 		for (Iterator<String> iterator = classpathList.iterator(); iterator
-				.hasNext();) {
+				.hasNext(); ) {
 			String next = iterator.next();
 			if (!next.endsWith("jar")) {
 				iterator.remove();

@@ -1,11 +1,5 @@
 package launch4j;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.List;
-import java.util.Scanner;
-
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.apache.maven.plugin.AbstractMojo;
@@ -13,48 +7,49 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugin.logging.Log;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
+import java.util.Scanner;
+
 /**
  * Goal which touches a timestamp file.
- * 
+ *
  * @goal launch4j
  * @phase package
  */
 public class Launch4jMojo extends AbstractMojo {
 	/**
 	 * Location of the file.
-	 * 
+	 *
 	 * @parameter property="project.build.finalName"
 	 * @required
-	 * 
 	 */
 	private String finalName;
 
 	/**
 	 * Location of the file.
-	 * 
+	 *
 	 * @parameter property="project.build.directory"
 	 * @required
-	 * 
 	 */
 	private File outputDirectory;
 
 	/**
 	 * @parameter property="launch4j.configs"
 	 * @required
-	 * 
 	 */
 	private File[] configs;
 
 	/**
 	 * @parameter property="launch4j.launch4jHome"
 	 * @required
-	 * 
 	 */
 	private File launch4jHome;
 
 	/**
 	 * @parameter property="project.runtimeClasspathElements"
-	 * 
 	 */
 	private List<String> classpath;
 
@@ -66,7 +61,7 @@ public class Launch4jMojo extends AbstractMojo {
 		if (log.isDebugEnabled()) {
 			log.debug("this = "
 					+ ToStringBuilder.reflectionToString(this,
-							ToStringStyle.MULTI_LINE_STYLE));
+					ToStringStyle.MULTI_LINE_STYLE));
 		}
 
 		try {
